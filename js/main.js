@@ -1,4 +1,4 @@
-const skillCards = document.querySelectorAll('.skills .cards div');
+const skillCards = document.querySelectorAll('.skills-section .cards div');
 
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -11,3 +11,22 @@ const observer = new IntersectionObserver(entries => {
 skillCards.forEach(card => {
     observer.observe(card);
 });
+
+let btn = document.getElementById("top");
+
+window.onscroll = function () {
+    if (window.scrollY >= 800) {
+        btn.style.display = "block";
+    } else {
+        btn.style.display = "none";
+    }
+};
+
+btn.onclick = function () {
+    window.scrollTo({
+        left: 0,
+        top: 0,
+        behavior: "smooth",
+    });
+};
+
