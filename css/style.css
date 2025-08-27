@@ -385,6 +385,53 @@ nav .social li a:hover {
     }
 }
 
+
+.services-section {
+    background-color: #050505;
+    color: #ccd6f6;
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 2px solid #38BDF8;
+}
+
+.services-section h2 {
+    font-size: 2.5rem;
+    color: #38BDF8;
+    margin-bottom: 40px;
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.service-cards div {
+    background-color: #112240;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    border: 1px solid #334155;
+}
+
+.service-cards div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #38BDF8;
+    border: 2px solid #38BDF8;
+}
+
+.service-cards h3 {
+    color: #38BDF8;
+    margin-bottom: 10px;
+}
+
+.service-cards p {
+    font-size: 1rem;
+    color: #F8FAFC;
+}
+
 .contact-section {
     background-color: #050505;
     color: #ccd6f6;
