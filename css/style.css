@@ -166,6 +166,7 @@ nav .social li a:hover {
     background: -webkit-linear-gradient(135deg, #00d4ff 0%, #38BDF8 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    height: 70px;
 }
 
 .profile-section p {
