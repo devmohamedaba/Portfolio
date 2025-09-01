@@ -59,6 +59,23 @@ nav .social-icons {
     cursor: pointer;
 }
 
+nav .social-icons .theme-btn {
+    top: 20px;
+    right: 20px;
+    color: #333;
+    border: none;
+
+    font-size: 15px;
+    padding-top: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    z-index: 1000;
+    background-color: #050505;
+    position: static;
+}
+
+
 .social-icons li i {
     color: #38BDF8;
     transition: color 0.3s ease;
@@ -75,6 +92,22 @@ nav .social {
     justify-items: center;
     gap: 10px;
     cursor: pointer;
+}
+
+nav .social .theme-btn {
+    top: 20px;
+    right: 20px;
+    color: #333;
+    border: none;
+
+    font-size: 15px;
+    padding-top: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    z-index: 1000;
+    background-color: #050505;
+    position: static;
 }
 
 nav .social li a {
@@ -387,6 +420,7 @@ nav .social li a:hover {
 }
 
 
+
 .services-section {
     background-color: #050505;
     color: #ccd6f6;
@@ -395,10 +429,11 @@ nav .social li a:hover {
     border-top: 2px solid #38BDF8;
 }
 
-.services-section h2 {
-    font-size: 2.5rem;
+.services h2 {
+    font-size: 30px;
     color: #38BDF8;
-    margin-bottom: 40px;
+    font-weight: bold;
+    text-align: center;
 }
 
 .service-cards {
@@ -432,6 +467,7 @@ nav .social li a:hover {
     font-size: 1rem;
     color: #F8FAFC;
 }
+
 
 .contact-section {
     background-color: #050505;
@@ -555,4 +591,55 @@ nav .social li a:hover {
     box-shadow: 0 0 45px #38BDF8;
     border: 1px solid #38BDF8;
     transition: box-shadow 0.3s ease;
+}
+
+
+body.light-mode {
+    background-color: #f9f9f9;
+    color: #1a1a1a;
+}
+
+body.light-mode nav {
+    background-color: #ffffff;
+    color: #1a1a1a;
+    border-bottom: 2px solid #2563EB;
+}
+
+body.light-mode nav span {
+    background: linear-gradient(135deg, #2563EB 0%, #00d4ff 100%);
+    -webkit-text-fill-color: transparent;
+}
+
+body.light-mode .icon i,
+body.light-mode .social-icons li i,
+body.light-mode .social li a,
+body.light-mode .profile-section span,
+body.light-mode .skills-section h1,
+body.light-mode .projects-section h2,
+body.light-mode .project-card h3,
+body.light-mode .project-card a,
+body.light-mode .services h2,
+body.light-mode .service-cards h3,
+body.light-mode .contact-section h2,
+body.light-mode .footer-section span {
+    color: #2563EB;
+}
+
+body.light-mode .project-card,
+body.light-mode .service-cards div,
+body.light-mode .work-section .w-4 div {
+    background-color: #ffffff;
+    color: #1a1a1a;
+    border: 1px solid #ccc;
+}
+
+body.light-mode .profile-section a,
+body.light-mode .contact-section button {
+    background-color: #2563EB;
+    color: #ffffff;
+}
+
+body.light-mode .theme-btn {
+    background-color: #ffffff;
+    color: #2563EB;
 }
