@@ -607,11 +607,15 @@ body.light-mode {
 body.light-mode nav {
     background-color: #ffffff;
     color: #1a1a1a;
-    border-bottom: 2px solid #2563EB;
+    border-bottom: 2px solid #38BDF8;
 }
 
 body.light-mode nav span {
-    background: linear-gradient(135deg, #2563EB 0%, #00d4ff 100%);
+    color: #38BDF8;
+    font-weight: bold;
+    font-size: 22px;
+    background: -webkit-linear-gradient(135deg, #00d4ff 0%, #38BDF8 100%);
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -623,28 +627,32 @@ body.light-mode .skills-section h1,
 body.light-mode .projects-section h2,
 body.light-mode .project-card h3,
 body.light-mode .project-card a,
+body.light-mode .work-section h4,
 body.light-mode .services h2,
 body.light-mode .service-cards h3,
 body.light-mode .contact-section h2,
 body.light-mode .footer-section span {
-    color: #2563EB;
+    color: #38BDF8;
 }
 
 body.light-mode .project-card,
+body.light-mode .work-section,
 body.light-mode .service-cards div,
+body.light-mode .contact-section,
+body.light-mode .footer-section,
 body.light-mode .work-section .w-4 div {
     background-color: #ffffff;
     color: #1a1a1a;
-    border: 1px solid #ccc;
+    border: 1px solid #38BDF8;
 }
 
 body.light-mode .profile-section a,
 body.light-mode .contact-section button {
-    background-color: #2563EB;
+    background-color: #38BDF8;
     color: #ffffff;
 }
 
 body.light-mode .theme-btn {
     background-color: #ffffff;
-    color: #2563EB;
+    color: #38BDF8;
 }
