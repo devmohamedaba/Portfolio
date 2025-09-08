@@ -452,6 +452,11 @@ nav .social li a:hover {
     border: 1px solid #334155;
 }
 
+.service-cards div i {
+    color: white;
+    font-weight: bold;
+}
+
 .service-cards div:hover {
     transform: scale(1.05);
     box-shadow: 0 0 30px #38BDF8;
