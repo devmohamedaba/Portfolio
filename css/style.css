@@ -260,6 +260,42 @@ nav .social li a:hover {
     animation: dotted-right 4s linear infinite;
 }
 
+.img::before {
+    content: "";
+    width: 380px;
+    height: 380px;
+    position: absolute;
+    border-width: 3px;
+    border-radius: 50%;
+    bottom: 52%;
+    right: 52%;
+    margin-right: -50%;
+    margin-bottom: -50%;
+    border-style: solid dotted solid dotted;
+    border-color: #38BDF8;
+    animation: dotted-left 3s linear infinite;
+}
+
+@keyframes dotted-right {
+    form {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(365deg);
+    }
+}
+
+@keyframes dotted-left {
+    form {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(-365deg);
+    }
+}
+
 .img:hover {
     transform: scale(1.1);
     box-shadow: 0 0 45px #38BDF8;
